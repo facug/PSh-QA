@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/facug/PSh-QA#readme",
   "devDependencies": {
+    "cypress": "^8.6.0",
     "typescript": "^4.4.4"
   }
 }
