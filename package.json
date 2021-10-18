@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/facug/PSh-QA/issues"
   },
-  "homepage": "https://github.com/facug/PSh-QA#readme"
+  "homepage": "https://github.com/facug/PSh-QA#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
 }

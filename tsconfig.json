@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "dist",
+      "types": ["cypress","node"],
+      "noImplicitAny": true,
+      "baseUrl": "../node_modules",
+      "resolveJsonModule": true
+    },
+    "lib": ["es2015"]
+  }
+  
