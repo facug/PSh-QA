@@ -1,3 +1,5 @@
+require('cypress-terminal-report/src/installLogsCollector')();
+
 import './commands'
 
 Cypress.on('uncaught:exception', (err, runnable) => {

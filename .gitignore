@@ -1,4 +1,5 @@
 package-lock.json
+cypress/videos
 # Logs
 logs
 *.log

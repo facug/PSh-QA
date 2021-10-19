@@ -5,7 +5,9 @@ import { ourClientsSection } from "../support/pages/OurClientsSection";
 describe("it will do an exam", function() {
     it("Access Our Client list and prints all clients and how many they are", function() {
         cy.visit('/');
-        ourClientsSection.scrollToSection();
+        ourClientsSection
+            .scrollToSection()
+            .printClients();
     });
     it("Navigate to blog and prints first tweet found", function() {
 
