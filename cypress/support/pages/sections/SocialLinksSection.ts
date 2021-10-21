@@ -1,4 +1,5 @@
 import { Section } from "../../basics/Section";
+import { stringParserHelper } from "../../helper/StringParserHelper";
 
 export class SocialLinksSection extends Section {
     #socialLinkSectionSelector: string = 'ul.copy--container';
@@ -15,7 +16,9 @@ export class SocialLinksSection extends Section {
             .within(() => {
                 cy.get(this.#linkSelector)
                 .each(function($el, index, $list) {
-                    cy.log($el.attr('href'))
+
+                    cy.log("title: ", stringParserHelper.getTitleFromLink($el.attr('href')));
+                    cy.log("url: ", $el.attr('href'));
                 })
             });
 

@@ -10,25 +10,27 @@ describe("it will do an exam", function() {
         ourClientsSection
             .scrollToSection(4000)
             .printClients();
-        //cy.visit('/en/');
         socialLinksSection
-            
+            .scrollToSection(4000)
             .printSocialLinks();
-
         cy.screenshot({capture:'viewport'});
     });
     /**
-     * 
+     * Ideally, i'd separate each test in each "it" segment, but reloading the page makes will sometimes fail it ;_;
      * 
      * it("Navigate to blog and prints first tweet found", function() {
-        
+        cy.visit('/blog');
 
     });
     it("Prints all social media urls in footer section", function() {
-
+        cy.visit('/en/');
+        socialLinksSection
+            .scrollToSection(8000)
+            .printSocialLinks();
     });
     it("Takes screenshot from the homepage", function() {
-
+        cy.visit('/en/');
+        cy.screenshot({capture:'viewport'});
     });
     */
 });
