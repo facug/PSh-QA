@@ -16,7 +16,6 @@ export class SocialLinksSection extends Section {
             .within(() => {
                 cy.get(this.#linkSelector)
                 .each(function($el, index, $list) {
-
                     cy.log("title: ", stringParserHelper.getTitleFromLink($el.attr('href')));
                     cy.log("url: ", $el.attr('href'));
                 })
