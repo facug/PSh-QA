@@ -4,7 +4,7 @@ import { ourClientsSection } from "../support/pages/sections/OurClientsSection";
 import { socialLinksSection, SocialLinksSection } from "../support/pages/sections/SocialLinksSection";
 
 
-describe("it will do an exam", function() {
+describe("it will do the PSh exam", function() {
     it("Access Our Client list and prints all clients and how many they are", function() {
         cy.visit('/');
         ourClientsSection
@@ -16,7 +16,7 @@ describe("it will do an exam", function() {
         cy.screenshot({capture:'viewport'});
     });
     /**
-     * Ideally, i'd separate each test in each "it" segment, but reloading the page makes will sometimes fail it ;_;
+     * Ideally, i'd separate each test in each "it" segment, but reloading the page will make it sometimes fail due to issues with loading the page ;_;
      * 
      * it("Navigate to blog and prints first tweet found", function() {
         cy.visit('/blog');
