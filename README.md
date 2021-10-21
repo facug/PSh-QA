@@ -14,4 +14,4 @@ or, if you want to use the3 cypress dashboard, you can run:
 
 ``` npm run cy:open ```
 
-whci
+which will open the cypress dashboard, allowing you to click on the spec you want to run (there's only one, named: ``` qaAutomationExam.spec ```)
